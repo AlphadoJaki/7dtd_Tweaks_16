@@ -6371,7 +6371,7 @@ Mesh files no longer used:
 	<property name="ActionExp" value="10"/>
 </item>
 
-<!-- dev item to test buff variables
+<!-- dev item to test buff variables-->	<!-- Tweak Admin Tool Start -->
 <item id="669" name="redPill">
 	<property name="Meshfile" value="Items/Health/painkillersPrefab"/>
 	<property name="Material" value="organic"/>
@@ -6434,7 +6434,7 @@ Mesh files no longer used:
 	<property name="ActionSkillGroup" value="Medicine"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<property name="Group" value="Science"/>
-</item>-->
+</item>	<!-- Tweak Admin Tool End -->
 
 <item id="671" name="brokenGlass"> <!-- scrap material -->
 	<property name="Meshfile" value="Items/Misc/brokenGlassPrefab"/>
@@ -9469,7 +9469,7 @@ Mesh files no longer used:
 </item>
 
 
-<!--
+	<!-- Tweak Admin Tool Start -->
 <item id="1501" name="superWrench">
 	<property name="Extends" value="wrench"/>
 	<property name="CustomIcon" value="wrench"/>
@@ -9597,5 +9597,5 @@ Mesh files no longer used:
 		<property name="DismembermentBaseChance" value="1"/>
 	</property>
 </item>
--->
+	<!-- Tweak Admin Tool End -->
 </items>

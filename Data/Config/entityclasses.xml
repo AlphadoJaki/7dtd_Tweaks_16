@@ -50,6 +50,7 @@
 	<property name="DropInventoryBlock" value="cntBackpackDropped"/>
 	<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="bottledWater,canChili,firstAidBandage,torch,keystoneBlock"/>
 	<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="bottledWater,canChili,firstAidBandage,torch,keystoneBlock"/>
+	<property name="ItemsOnEnterGame.GameModeCreative" value="gunSuperDigger,gunJustDie,hammerOfGod,redPill,bluePill,torch"/>	<!-- Tweak Admin Tool Start & End -->
 	<property name="ExperienceGain" value="173"/>
 	<property name="LegsExplosionDamageMultiplier" value="1"/>
 	<property name="ArmsExplosionDamageMultiplier" value="1"/>
