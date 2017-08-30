@@ -632,6 +632,13 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="electronicParts" count="1"/>
 </recipe>
 
+<recipe name="cntGraniteSink" count="1">		<!-- Tweak Working Sink Toilet &more Start -->
+	<ingredient name="bucketWater" count="1"/>
+	<ingredient name="shortMetalPipe" count="4"/>
+	<ingredient name="mechanicalParts" count="1"/>
+	<ingredient name="cntCabinetTop" count="1"/>
+</recipe>
+	<!-- Tweak Working Sink Toilet &more End -->
 <recipe name="cntMailBox01" count="1">
 	<ingredient name="forgedIron" count="2"/>
 	<ingredient name="wood" count="3"/>
@@ -1036,6 +1043,12 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="unit_clay" count="10"/>
 </recipe>
 
+<recipe name="fountain" count="1">		<!-- Tweak Working Sink Toilet &more Start -->
+	<ingredient name="bucketWater" count="1"/>
+	<ingredient name="shortMetalPipe" count="1"/>
+	<ingredient name="mechanicalParts" count="1"/>
+</recipe>
+	<!-- Tweak Working Sink Toilet &more End -->
 <recipe name="garageDoorMetal_v1" count="1" craft_area="workbench">
 	<ingredient name="scrapIron" count="240"/>
 	<ingredient name="spring" count="6"/>
