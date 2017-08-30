@@ -529,7 +529,7 @@ snowberryPlant feeds you for 90 sec. -->
 
 <buff id="bluePillBuff" duration="0" actions="increment(CTRbluePill, 1, 1, 0, 0)" icon="ui_game_symbol_hammer"
 	name_key="bluePillBuffName" description_key="bluePillBuffDesc" tooltip_key="bluePillBuffTooltip" causes="bluePill">
-	<modify id="0" stat="food" amount="1" rate="100"/>
+	<modify id="0" stat="food" amount="1" rate="1"/>	<!-- Tweak Admin Tool Start -->
 	<modify id="1" stat="water" amount="1" rate="100"/>
 	<modify id="2" stat="health" amount="1" rate="1"/>
 	<modify id="3" stat="wellness" amount="800" rate="1" duration="1"/>
