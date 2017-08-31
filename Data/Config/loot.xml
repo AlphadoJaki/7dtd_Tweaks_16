@@ -432,6 +432,14 @@
 	</lootqualitytemplate>
 </lootqualitytemplates>
 
+<lootqualitytemplates>	<!-- Tweak Starting Gear Start -->
+	<lootqualitytemplate name="startingGearTemplate">
+		<qualitytemplate level="0,1" default_quality="200,210">
+			<loot quality="200,200" prob="1"/>
+		</qualitytemplate>
+	</lootqualitytemplate>
+</lootqualitytemplates>	<!-- Tweak Starting Gear End -->
+
 
 <lootgroup name="empty"/>
 
@@ -1401,6 +1409,114 @@
 	<item name="beaker" prob="0.15"/>
 </lootgroup>
 
+<lootgroup name="tops" count="1">	<!-- Tweak Starting Gear Start -->
+	<item group="tankTopAll"/>
+	<item group="tshirtAll"/>
+	<item group="shirtLongAll"/>
+	<item group="sweatshirtAll"/>
+	<item group="hoodedSweatshirtAll"/>
+	<item group="flannelShirtAll"/>
+</lootgroup>
+
+<lootgroup name="bottoms" count="1">
+	<item group="pantsAll"/>
+	<item group="skirtsAll"/>
+	<item group="denimShortsPantsAll"/>
+	<item group="overallsAll"/>
+</lootgroup>
+
+<lootgroup name="caps" count="1">
+	<item group="skullCapAll"/>
+	<item group="ballCapAll"/>
+	<item group="cowboyHatAll"/>
+	<item group="empty"/>
+</lootgroup>
+
+<lootgroup name="outer" count="1">
+	<item name="suitJacketBlack"/>
+	<item name="leatherDuster"/>
+	<item group="pufferCoatAll"/>
+	<item group="empty"/>
+</lootgroup>
+
+<lootgroup name="shoes" count="1">
+	<item name="runningShoes"/>
+	<item name="wornBoots"/>
+	<item name="gothBootsBlack"/>
+	<item name="suitJacketBlack"/>
+	<item name="cowboyBootsBrown"/>
+	<item name="cowboyBootsBlack"/>
+</lootgroup>
+
+<lootgroup name="clothSet" count="all">
+	<item group="tops"/>
+	<item group="bottoms"/>
+	<item group="caps"/>
+	<item group="outer"/>
+	<item group="shoes"/>
+</lootgroup>
+
+<lootgroup name="meds" count="1">
+	<item name="firstAidBandage" count="2"/>
+	<item name="firstAidKit" count="1"/>
+	<item name="painkillers" count="5"/>
+</lootgroup>
+
+<lootgroup name="drinks" count="1">
+	<item name="bottledWater"/>
+	<item name="goldenRodTea"/>
+	<item name="beer"/>
+	<item name="coffee"/>
+	<item name="megaCrush" prob="0.5"/>
+	<item name="foodHoney" prob="0.25"/>
+</lootgroup>
+
+<lootgroup name="weapons" count="1">
+	<item group="weaponsPistol+ammo"/>
+	<item group="weaponsAnyShotguns+ammo"/>
+	<item group="weaponsHuntingRifle+ammo"/>
+	<item group="weaponsCrossbow+ammo" prob="2"/>
+	<item name="clubSpiked" prob="2"/>
+	<item name="huntingKnife" prob="2"/>
+</lootgroup>
+
+<lootgroup name="foods" count="1">
+	<item name="canBeef"/>
+	<item name="canCatfood"/>
+	<item name="canChicken"/>
+	<item name="canChili"/>
+	<item name="canDogfood"/>
+	<item name="canHam"/>
+	<item name="canLamb"/>
+	<item name="canMiso"/>
+	<item name="canPasta"/>
+	<item name="canPeas"/>
+	<item name="canSalmon"/>
+	<item name="canSoup"/>
+	<item name="canStock"/>
+	<item name="canTuna"/>
+	<item name="canPears"/>
+</lootgroup>
+
+<lootgroup name="usefulThings" count="1">
+	<item name="antibiotics"/>
+	<item name="oldCash" count="20"/>
+	<item group="commonBooks"/>
+	<item group="rareBooks"/>
+	<item name="fireaxeIron"/>
+	<item name="tazasStoneaxe"/>
+	<item name="cookingPot"/>
+</lootgroup>
+
+<lootgroup name="startingGear" count="all">
+	<item group="clothSet"/>
+	<item group="meds"/>
+	<item group="drinks"/>
+	<item group="foods"/>
+	<item group="weapons"/>
+	<item group="usefulThings"/>
+</lootgroup>
+	<!-- Tweak Starting Gear End -->
 
 <!-- misc storage, cardboard boxes-->
 <lootcontainer id="1" count="0,2" size="5,4" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="baseTemplate">
@@ -2213,5 +2329,10 @@
 <!-- "bag" container that gets dropped when a zombie gore block is destroyed but still contained loot -->
 <lootcontainer id="99" count="0" size="5,10" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="baseTemplate">
 </lootcontainer>
+
+<!-- cntStartingGear -->	<!-- Tweak Starting Gear Start -->
+<lootcontainer id="151" count="1" size="5,10" destroy_on_close="true" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="startingGearTemplate">
+	<item group="startingGear"/>
+</lootcontainer>	<!-- Tweak Starting Gear End -->
 
 </lootcontainers>

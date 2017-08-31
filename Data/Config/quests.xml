@@ -336,6 +336,20 @@
 		<objective type="TreasureChest" id="treasureChest" value="1000-1750" />
 	</quest>
 
+	<quest id="quest_StartingGear" group_name="Starting Gear" name="Starting Gear" subtitle="Starting Gear" description="Starting Gear" icon="ui_game_symbol_backpack" category_key="quest" difficulty="veryeasy" offer="Accept for Starting Gear">	<!-- Tweak Starting Gear Start -->
+		<reward type="Item" id="torch" value="1" />
+		<reward type="Item" id="keystoneBlock" value="1" />
+		<reward type="Item" id="bandana" value="100-200" />
+		<!-- For personal reference
+		<reward type="Exp" value="5000" />
+		<reward type="Level" value="1" />
+		<reward type="Quest" id="quest_BasicSurvival1" stage="aftercomplete" />
+		<reward type="Recipe" id="torch" />
+		<reward type="ShowTip" value="tutorialTipQuest02" stage="aftercomplete" />
+		<reward type="Skill" id="Pistols" value="10" />
+		<reward type="SkillPoints" value="6" />-->
+    </quest>	<!-- Tweak Starting Gear End -->
+
 
 
 </quests>
