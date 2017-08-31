@@ -49,7 +49,7 @@
 	<property name="IsEnemyEntity" value="false"/>
 	<property name="DropInventoryBlock" value="cntBackpackDropped"/>
 	<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="cntStartingGearSecure,q_startingGear"/>
-	<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="bottledWater,canChili,firstAidBandage,torch,keystoneBlock"/>
+	<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="cntStartingGearSecure,q_startingGear"/>
 	<property name="ExperienceGain" value="173"/>
 	<property name="LegsExplosionDamageMultiplier" value="1"/>
 	<property name="ArmsExplosionDamageMultiplier" value="1"/>
