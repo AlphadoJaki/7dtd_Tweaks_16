@@ -9598,4 +9598,15 @@ Mesh files no longer used:
 	</property>
 </item>
 -->
+<item id="1601" name="q_startingGear">	<!-- Tweak Starting Gear Start -->
+	<property name="Extends" value="questMaster"/>
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="CustomIcon" value="backpackMedium"/><property name="CustomIconTint" value="ffa0a0"/>
+	<property class="Action1">
+		<property name="QuestGiven" value="quest_startingGear"/>
+	</property>
+</item>
+	<!-- Tweak Starting Gear End -->
 </items>

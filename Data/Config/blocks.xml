@@ -15957,4 +15957,17 @@ kind of free
 	<drop event="Destroy" name="brokenGlass" count="1,4"/>
 </block>
 
+<block id="583" name="cntStartingGearInsecure">	<!-- Tweak Starting Gear Start -->
+	<property name="Extends" value="cntBackpack01"/>
+	<property name="CustomIcon" value="backpackMedium"/>
+	<property name="MaxDamage" value="1"/>
+	<property name="StabilitySupport" value="true"/>
+	<property name="LootList" value="151"/>
+</block>
+
+<block id="584" name="cntStartingGearSecure">
+	<property name="Extends" value="cntStartingGearInsecure" param1="Class"/>
+	<property name="DowngradeBlock" value="cntStartingGearInsecure"/>
+</block>	<!-- Tweak Starting Gear End 585 free -->
+
 </blocks><!-- Block limit: No block can have an ID greater 2047. -->
