@@ -1049,7 +1049,7 @@
 	</perk>
 	-->
 
-	<perk name="Quicker Crafting" icon="forge" description_key="quickerCraftingDesc" title_key="quickerCrafting" max_level="5" skill_point_cost_multiplier="0" passive_effect="true" skill_point_cost_per_level="4" always_fire="true" group="crafting">
+	<perk name="Quicker Crafting" icon="forge" description_key="quickerCraftingDesc" title_key="quickerCrafting" max_level="5" skill_point_cost_multiplier="0" passive_effect="true" skill_point_cost_per_level="4" always_fire="true" group="crafting">	<!-- Tweak Option Craft Timer 0 Start -->
 		<requirement perk_level="1" required_player_level="1"/>
 		<requirement perk_level="2" required_player_level="10"/>
 		<requirement perk_level="3" required_player_level="20"/>
@@ -1063,7 +1063,7 @@
 			<multiply skill_level="4" value="0.6"/>
 			<multiply skill_level="5" value="0.5"/>
 		</effect>
-	</perk>
+	</perk>	<!-- Tweak Option Craft Timer 0 End -->
 	<perk name="The Fixer" icon="wrench" description_key="theFixerDesc" title_key="theFixer" max_level="4" skill_point_cost_multiplier="1.58" skill_point_cost_per_level="3" passive_effect="true" always_fire="true" group="crafting">
 		<requirement perk_level="1" required_player_level="1"/>
 		<requirement perk_level="2" required_player_level="10"/>
