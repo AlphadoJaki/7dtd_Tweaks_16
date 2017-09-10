@@ -1011,6 +1011,10 @@ There is a console command: forcegamestage
 
 	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXX  start: auto generated feral horde gamestages  XXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 	<spawner name="BloodMoonHorde">	<!-- Tweak Easy Horde Fix Start -->
+<!-- Replace with the options : Regular expression && Case sensitive
+		SEARCH:	 "([0-9]*)" duration="([0-9])"/><([^A]*)Alive="[0-9]*"/></gamestage>
+		REPLACE: "$1" duration="$2"/><$3Alive="$1"/></gamestage> 
+-->
 		<gamestage stage="1"><spawn group="feralHordeStageGS1" num="1" maxAlive="2" duration="1"/><spawn group="ZombiesNight" num="1" maxAlive="1"/></gamestage>
 		<gamestage stage="2"><spawn group="feralHordeStageGS2" num="2" maxAlive="2" duration="1"/><spawn group="ZombiesNight" num="3" maxAlive="1"/></gamestage>
 		<gamestage stage="4"><spawn group="feralHordeStageGS4" num="4" maxAlive="2" duration="1"/><spawn group="ZombiesNight" num="5" maxAlive="1"/></gamestage>
