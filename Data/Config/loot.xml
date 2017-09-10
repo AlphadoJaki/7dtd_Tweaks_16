@@ -1807,9 +1807,9 @@
 	<item group="militaryArmor" prob="0.2"/>
 </lootcontainer>
 
-<!-- minibike storage -->
+<!-- minibike storage -->	<!-- Tweak Minibike Storage x3 Start -->
 <lootcontainer id="62" count="0" size="3,6" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="baseTemplate">
-</lootcontainer>
+</lootcontainer>	<!-- Tweak Minibike Storage x3 End -->
 
 <!-- mountain man loot -->
 <lootcontainer id="63" count="1" size="8,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="baseTemplate">

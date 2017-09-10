@@ -253,6 +253,9 @@
 	</item_stack>
 	<!--*#$-IGS END.-$#-->
 	
+	<!-- Tweak Minibike Storage x3 Start -->
+	<!-- Tweak Minibike Storage x3 End -->
+	
 	<required_item_stack>
 		<rect controller="RequiredItemStack" style="itemStack, hover">
 			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="78" height="78" color="[black]" type="sliced" fillcenter="false" />	
