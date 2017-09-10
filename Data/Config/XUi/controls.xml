@@ -254,6 +254,33 @@
 	<!--*#$-IGS END.-$#-->
 	
 	<!-- Tweak Minibike Storage x3 Start -->
+	<!--#$-IGS BEGIN: Increasing collider scale to improve snap responsiveness -$#-->
+	<item_stack_smaller>
+		<rect controller="ItemStack" style="itemStack, hover" collider_scale="0.65" pos="-17,15">
+			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="48" height="48" color="[black]" type="sliced" fillcenter="false" />	
+			<sprite depth="3" name="background" sprite="menu_empty3px" width="43" height="43" color="[darkGrey]" type="sliced" globalopacity="true" fillcenter="false"/>
+			<sprite depth="2" name="highlightOverlay" width="42" height="42" color="[darkGrey]" pos="0,0" type="sliced" globalopacity="true"/>
+
+			<texture depth="3" name="backgroundTexture" material="Materials/Transparent Colored" size="43,43" globalopacity="true"/>
+			
+			<sprite depth="4" name="itemIcon" width="40" height="30" atlas="ItemIconAtlas" sprite="{itemicon}" pos="20,-17" pivot="center" foregroundlayer="true" color="{iconcolor}" />
+			<sprite depth="8" name="lockTypeIcon" width="24" height="24" sprite="" pos="2,-2" foregroundlayer="true"/><!-- def-value -->
+			
+			<sprite depth="3" name="durabilityBackground" width="40" height="6" sprite="menu_empty3px" color="[darkGrey]" type="sliced" pos="2, -34" foregroundlayer="true"/>
+			<sprite depth="4" name="durability" width="40" height="6" sprite="menu_empty2px" color="[transparent]" type="filled" pos="2, -34" foregroundlayer="true"/>
+			
+			<sprite depth="5" name="disabledOverlay" width="42" height="42" color="[darkGrey_half_alpha]" pos="1,-1" type="sliced" visible="false"/>
+			
+			<label depth="7" name="stackValue" pos="-1,-23" width="40" height="20" text="{itemcount}" font_size="18" effect="outline" justify="center" />
+			<label depth="7" name="timer" pos="20,-23" width="40" height="16" font_size="16" justify="center" pivot="center" effect="outline" color="[beige]"/>
+			<sprite depth="9" name="cancel" sprite="ui_game_symbol_x" width="40" height="40" color="255,0,0,255" type="sliced" visible="false" foregroundlayer="true"/>
+			<!--#$-IGS BEGIN: Setting itemName above the soft cursor. -$#-->
+			<label depth="12" name="itemName" pos="21,-20" width="0" height="0" text="" font_size="18" justify="center" overflow="resizefreely" effect="outline" pivot="center" above_soft_cursor="true"/>
+			<!--*#$-IGS END.-$#-->
+			<sprite depth="13" name="assembleIcon" size="26,26" sprite="ui_game_symbol_lock" visible="{isassemblelocked}" pos="9,-9" foregroundlayer="true" />
+		</rect>
+	</item_stack_smaller>
+	<!--*#$-IGS END.-$#-->
 	<!-- Tweak Minibike Storage x3 End -->
 	
 	<required_item_stack>

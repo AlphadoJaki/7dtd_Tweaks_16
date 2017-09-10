@@ -1258,7 +1258,7 @@
 			<label style="header.name" text="MINIBIKE STORAGE" text_key="xuiMinibikeStorage" />
 		</panel>
 
-		<grid depth="2" name="inventory" rows="6" cols="3" pos="3,-46" cell_width="75" cell_height="75" repeat_content="true" controller="VehicleContainer">	<!-- Tweak Minibike Storage x3 Start -->
+		<grid depth="2" name="inventory" rows="10" cols="5" pos="3,-46" cell_width="45" cell_height="45" repeat_content="true" controller="VehicleContainer">	<!-- Tweak Minibike Storage x3 Start -->
 			<item_stack name="0"/>
 		</grid>	<!-- Tweak Minibike Storage x3 End -->
 
