@@ -1010,7 +1010,7 @@ There is a console command: forcegamestage
 	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXX  end: auto generated screamer / scout horde gamestages  XXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 
 	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXX  start: auto generated feral horde gamestages  XXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-	<spawner name="BloodMoonHorde">
+	<spawner name="BloodMoonHorde">	<!-- Tweak Easy Horde Fix Start -->
 		<gamestage stage="1"><spawn group="feralHordeStageGS1" num="1" maxAlive="2" duration="1"/><spawn group="ZombiesNight" num="1" maxAlive="1"/></gamestage>
 		<gamestage stage="2"><spawn group="feralHordeStageGS2" num="2" maxAlive="2" duration="1"/><spawn group="ZombiesNight" num="3" maxAlive="1"/></gamestage>
 		<gamestage stage="4"><spawn group="feralHordeStageGS4" num="4" maxAlive="2" duration="1"/><spawn group="ZombiesNight" num="5" maxAlive="1"/></gamestage>
@@ -1333,7 +1333,7 @@ There is a console command: forcegamestage
 		<gamestage stage="4049"><spawn group="feralHordeStageGS4013" num="300" maxAlive="256" duration="3"/><spawn group="feralHordeStageGS4031" num="300" maxAlive="256" duration="3"/><spawn group="feralHordeStageGS4049" num="300" maxAlive="256" duration="3"/><spawn group="ZombiesNight" num="600" maxAlive="3"/></gamestage>
 		<gamestage stage="4067"><spawn group="feralHordeStageGS4031" num="300" maxAlive="256" duration="3" interval="27"/><spawn group="feralHordeStageGS4049" num="300" maxAlive="256" duration="3"/><spawn group="feralHordeStageGS4067" num="300" maxAlive="256" duration="3"/><spawn group="ZombiesNight" num="600" maxAlive="3"/></gamestage>
 		<gamestage stage="4086"><spawn group="feralHordeStageGS4049" num="300" maxAlive="256" duration="3"/><spawn group="feralHordeStageGS4067" num="300" maxAlive="256" duration="3"/><spawn group="feralHordeStageGS4086" num="300" maxAlive="256" duration="3"/><spawn group="ZombiesNight" num="600" maxAlive="3"/></gamestage>
-	</spawner>
+	</spawner>	<!-- Tweak Easy Horde Fix End -->
 	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXX  end: auto generated feral horde gamestages  XXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 
 </gamestages>
