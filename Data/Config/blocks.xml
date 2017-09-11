@@ -13210,6 +13210,7 @@ kind of free
 	<drop event="Harvest" name="electricParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
 	<drop event="Harvest" name="scrapIron" count="12"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="1" stick_chance="1"/>
+	<!-- Tweak Car & Loot Respawn -->
 	<property name="BigDecorationRadius" value="5"/>
 	<property name="CanDecorateOnSlopes" value="false"/>
 	<!--
@@ -13233,6 +13234,9 @@ kind of free
 	</property>
 	<property name="ActivationDistance" value="6"/>
 </block>
+
+	<!-- Tweak Car & Loot Respawn Start -->
+	<!-- Tweak Car & Loot Respawn End -->
 	<!-- n Free -->
 
 <block id="1463" name="scrapHatch_v1">
