@@ -116,14 +116,14 @@
 		</panel>
 	</skill_search>
 	
-	<count_control_input>
+	<count_control_input>	<!-- Tweak Option Craft Timer 0 Start -->
 		<panel controller="TextInput" pos="12,-6" width="30" height="28" value="1"
 			active_text_color="[white]" caret_color="[white]" selection_color="[mediumGrey_half_alpha]" 
-			character_limit="3" validation="integer" backgroundcolor="[black]" on_press="true" snapCursor="true" virtual_keyboard_prompt="vkPromptCount">
+			character_limit="5" validation="integer" backgroundcolor="[black]" on_press="true" snapCursor="true" virtual_keyboard_prompt="vkPromptCount">
 			<sprite depth="1" name="background" color="[black]" type="sliced"/>
 			<label depth="2" name="text" pos="0,-2" font_size="26" justify="center" pivot="topleft"/>
 		</panel>
-	</count_control_input>
+	</count_control_input>	<!-- Tweak Option Craft Timer 0 End -->
 	
 	<archetype_entry>
 		<panel height="43" style="press, hover, scroll" controller="ArchetypeEntry" disabled_font_color="[lightGrey]" enabled_font_color="[labelColor]" sound="[recipe_click]" backgroundcolor="[darkGrey]" bordercolor="[black]" borderthickness="3">
