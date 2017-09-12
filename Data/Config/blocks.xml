@@ -13246,6 +13246,7 @@ kind of free
 	<property name="Class" value="PlantGrowing"/>
 	<property name="CreativeMode" value="Dev"/>
 	<property name="Material" value="treeWoodSmall"/>
+	<property name="StabilitySupport" value="false"/>	<!-- Untouchable block -->
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="Entities/Trees/Prefabs/Stump"/>
 	<property name="ModelOffset" value="0,-255,0"/>
