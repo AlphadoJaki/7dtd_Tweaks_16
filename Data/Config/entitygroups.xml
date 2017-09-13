@@ -227,68 +227,68 @@
 	</entitygroup>
 
 	<entitygroup name="EnemyAnimalsDesert">
-		<entity name="invisibleAnimalEnemy" prob="6" />
+		<entity name="invisibleAnimalEnemy" prob="2" />	<!-- Tweak x2 More Animal -->
 		<entity name="animalZombieVulture" />
 		<entity name="animalSnake" />
 	</entitygroup>
 
 	<entitygroup name="FriendlyAnimalsDesert">
-		<entity name="invisibleAnimal" prob="6" />
+		<entity name="invisibleAnimal" prob="1.8" />	<!-- Tweak x2 More Animal -->
 		<entity name="animalRabbit" />
 		<entity name="animalChicken" />
 		<entity name="animalBoar" prob="0.4" />
 	</entitygroup>
 
 	<entitygroup name="EnemyAnimalsSnow">
-		<entity name="invisibleAnimalEnemy" prob="6" />
+		<entity name="invisibleAnimalEnemy" prob="2.75" />	<!-- Tweak x2 More Animal -->
 		<entity name="animalZombieVulture" prob="0.4" />
 		<entity name="animalDireWolf" prob="0.05" />
 		<entity name="animalBear" prob="0.05" />
 	</entitygroup>
 
 	<entitygroup name="FriendlyAnimalsSnow">
-		<entity name="invisibleAnimal" prob="3" />
+		<entity name="invisibleAnimal" prob="0.6" />	<!-- Tweak x2 More Animal -->
 		<entity name="animalRabbit" />
 		<entity name="animalBoar" prob="0.4" />
 		<entity name="animalStag" prob="0.4" />
 	</entitygroup>
 
 	<entitygroup name="EnemyAnimalsForest">
-		<entity name="invisibleAnimalEnemy" prob="6" />
+		<entity name="invisibleAnimalEnemy" prob="2.75" />	<!-- Tweak x2 More Animal -->
 		<entity name="animalWolf" prob="0.4" />
 		<entity name="animalBear" prob="0.05" />
 		<entity name="animalDireWolf" prob="0.05" />
 	</entitygroup>
 
 	<entitygroup name="FriendlyAnimalsForest">
-		<entity name="invisibleAnimal" prob="3" />
+		<entity name="invisibleAnimal" prob="0.6" />	<!-- Tweak x2 More Animal -->
 		<entity name="animalRabbit" />
 		<entity name="animalBoar" prob="0.4" />
 		<entity name="animalStag" prob="0.4" />
 	</entitygroup>
 
 	<entitygroup name="EnemyAnimalsBurntForest">
-		<entity name="invisibleAnimalEnemy" prob="6" />
+		<entity name="invisibleAnimalEnemy" prob="2.425" />	<!-- Tweak x2 More Animal -->
 		<entity name="animalZombieVulture" />
 		<entity name="animalZombieBear" prob="0.15" />
 	</entitygroup>
 
 	<entitygroup name="FriendlyAnimalsBurntForest">
-		<entity name="invisibleAnimal" prob="6" />
+		<entity name="invisibleAnimal" prob="2.1" />	<!-- Tweak x2 More Animal -->
 		<entity name="animalChicken" />
 		<entity name="animalStag" prob="0.4" />
 		<entity name="animalBoar" prob="0.4" />
 	</entitygroup>
 
 	<entitygroup name="EnemyAnimalsPlains">
-		<entity name="invisibleAnimalEnemy" prob="6" /> <!-- The first entity in the list of a group determines if it can spawn in safe zones or not. This animal is not friendly therefore this group will not spawn in safe zones-->
+		<entity name="invisibleAnimalEnemy" prob="1.5" /> <!-- The first entity in the list of a group determines if it can spawn in safe zones or not. This animal is not friendly therefore this group will not spawn in safe zones-->	<!-- Tweak x2 More Animal -->
 		<entity name="animalZombieVulture" />
 		<entity name="animalSnake" />
 		<entity name="animalWolf" />
 	</entitygroup>
 
 	<entitygroup name="FriendlyAnimalsPlains">
-		<entity name="invisibleAnimal" prob="6" />
+		<entity name="invisibleAnimal" prob="1" />	<!-- Tweak x2 More Animal -->
 		<entity name="animalRabbit" />
 		<entity name="animalChicken" />
 		<entity name="animalBoar" />

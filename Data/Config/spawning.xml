@@ -62,7 +62,7 @@
     <biome name="wasteland">
         <spawn maxcount="2" respawndelay="1" time="Day"   entitygroup="ZombiesAll" />
         <spawn maxcount="2" respawndelay="1" time="Night" entitygroup="ZombiesWastelandNight" />
-        <spawn maxcount="1" respawndelay="1" time="Any"   entitygroup="EnemyAnimalsWasteland" spawnDeadChance="0" />
+        <spawn maxcount="2" respawndelay="1" time="Any"   entitygroup="EnemyAnimalsWasteland" spawnDeadChance="0" />	<!-- Tweak x2 More Animal -->
 
     </biome>
 
