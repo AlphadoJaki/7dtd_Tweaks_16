@@ -107,19 +107,19 @@
 		</effect>
 	</player_skill>
 
-	<perk name="Fast Eddie" icon="loot_sack" description_key="fastEddieDesc" title_key="fastEddie" max_level="4" skill_point_cost_multiplier="1.49" skill_point_cost_per_level="4" always_fire="true" group="scavenging">
+	<perk name="Fast Eddie" icon="loot_sack" description_key="fastEddieDesc" title_key="fastEddie" max_level="4" skill_point_cost_multiplier="1.49" skill_point_cost_per_level="0" always_fire="true" group="scavenging">	<!-- Tweak Option Loot Timer 0 Start -->
 		<requirement perk_level="1" required_skill_name="Scavenging" required_skill_level="1"/>
 		<requirement perk_level="2" required_skill_name="Scavenging" required_skill_level="20"/>
 		<requirement perk_level="3" required_skill_name="Scavenging" required_skill_level="40"/>
 		<requirement perk_level="4" required_skill_name="Scavenging" required_skill_level="60"/>
 		<effect name="LootTime">
-			<multiply perk_level="0" value="1"/>
+			<multiply perk_level="0" value="0"/>
 			<multiply skill_level="1" value="0.70"/>
 			<multiply skill_level="2" value="0.50"/>
 			<multiply skill_level="3" value="0.35"/>
 			<multiply skill_level="4" value="0.25"/>
 		</effect>
-	</perk>
+	</perk>	<!-- Tweak Option Loot Timer 0 End -->
 
 	<perk name="Quality Joe" icon="quality_joe" description_key="qualityJoeDesc" title_key="qualityJoe" max_level="3" skill_point_cost_multiplier="2" skill_point_cost_per_level="4" always_fire="true" group="scavenging">
 		<requirement skill_level="1" required_skill_name="Scavenging" required_skill_level="20"/>
