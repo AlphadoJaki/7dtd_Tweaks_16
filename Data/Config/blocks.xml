@@ -13255,6 +13255,8 @@ kind of free
 	<property name="Place" value="TowardsPlacer"/>
 	<property name="MultiBlockDim" value="2,2,6"/>
 	<property name="ShowModelOnFall" value="false"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" count="1" prob="0.75" stick_chance="1"/>
 	<property name="BigDecorationRadius" value="5"/>
 	<property name="CanDecorateOnSlopes" value="false"/>
 	<property name="PlantGrowing.Next" value="randomCarsHelper" />
