@@ -1100,7 +1100,7 @@ group desc for stuff like metal siding
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="20"/>
 </block>
-	<!-- 1 Free -->
+	<!-- 0 Free -->
 
 <block id="124" name="cobblestoneMaster">
 	<property name="Group" value="Building"/>
@@ -1156,7 +1156,7 @@ group desc for stuff like metal siding
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="20"/>
 </block>
-	<!-- 1 Free -->
+	<!-- 0 Free -->
 
 <block id="128" name="treeMaster">
 	<property name="DescriptionKey" value="plantsBlockGroupDesc"/>
@@ -3553,6 +3553,7 @@ group desc for stuff like metal siding
 	<property name="Mesh" value="models"/>
 	<property name="Model" value="Industrial/pole_top01" param1="main_mesh"/>
 	<property name="IsTerrainDecoration" value="true"/>
+	<property name="DowngradeBlock" value="poleTop01Damage"/>	<!-- Tweak Car & Harvest Respawn -->
 	<drop event="Harvest" name="forgedIron" count="1,4"/>
 	<drop event="Harvest" name="forgedSteel" count="0,3"/>
 	<drop event="Harvest" name="mechanicalParts" count="2,6" tool_category="Disassemble"/>
@@ -5249,6 +5250,7 @@ kind of free
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="LootList" value="25"/>
 	<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	<property name="DowngradeBlock" value="cntBirdnestDamage"/>	<!-- Tweak Car & Harvest Respawn -->
 	<drop event="Harvest" name="cloth" count="1" prob="0.3" tool_category="Disassemble"/>
 	<drop event="Harvest" name="feather" count="3" prob="0.35" tool_category="Disassemble"/>
 	<drop event="Harvest" name="feather" count="2" prob="0.6" tool_category="Disassemble"/>
@@ -9214,6 +9216,7 @@ kind of free
 		<property name="mechanicalParts" value="1"/>
 		<property name="electricParts" value="1"/>
 	</property>
+	<property name="DowngradeBlock" value="cntWashingMachineDamage"/>	<!-- Tweak Car & Harvest Respawn -->
 	<drop event="Harvest" name="shortMetalPipe" count="1,4" tool_category="Disassemble"/>
 	<drop event="Harvest" name="mechanicalParts" count="0,2" tool_category="Disassemble"/>
 	<drop event="Harvest" name="electricParts" count="0,1" tool_category="Disassemble"/>
@@ -9237,6 +9240,7 @@ kind of free
 		<property name="mechanicalParts" value="2"/>
 		<property name="electricParts" value="1"/>
 	</property>
+	<property name="DowngradeBlock" value="cntTrashCompactorDamage"/>	<!-- Tweak Car & Harvest Respawn -->
 	<drop event="Harvest" name="mechanicalParts" count="0,3" tool_category="Disassemble"/>
 	<drop event="Harvest" name="electricParts" count="0,1" tool_category="Disassemble"/>
 	<drop event="Destroy" name="scrapIron" count="5"/>
@@ -9815,6 +9819,7 @@ kind of free
 	<property name="Material" value="metal"/>
 	<property name="Texture" value="346,345,341,345,262,345"/>
 	<property name="LootList" value="3"/>
+	<property name="DowngradeBlock" value="cntWallOvenDamage"/>	<!-- Tweak Car & Harvest Respawn -->
 	<drop event="Harvest" name="mechanicalParts" count="0,1" tool_category="Disassemble"/>
 	<drop event="Harvest" name="shortMetalPipe" count="1,2" tool_category="Disassemble"/>
 	<drop event="Destroy" name="scrapIron" count="5,10" prob="1"/>
@@ -11999,6 +12004,7 @@ kind of free
 	<property name="ImposterExchange" value="imposterCTREighth" param1="111"/>
 	<property name="LootList" value="54"/>
 	<property name="IsTerrainDecoration" value="true"/>
+	<property name="DowngradeBlock" value="cntShoppingCartDamage"/>	<!-- Tweak Car & Harvest Respawn -->
 	<drop event="Harvest" name="mechanicalParts" count="1,3" tool_category="Disassemble"/>
 	<drop event="Destroy" name="scrapIron" count="1,15"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
@@ -12025,6 +12031,7 @@ kind of free
 	<property name="Model" value="LootContainers/shopping_basket" param1="main_mesh"/>
 	<property name="CustomIcon" value="shoppingBasketEmpty"/>
 	<property name="LootList" value="58"/>
+	<property name="DowngradeBlock" value="cntShoppingBasketDamage"/>	<!-- Tweak Car & Harvest Respawn -->
 	<drop event="Destroy" count="0"/>
 	<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
 	<drop event="Destroy" name="shoppingBasketItem" count="1" tool_category="Disassemble"/>
@@ -13210,6 +13217,7 @@ kind of free
 	<drop event="Harvest" name="electricParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
 	<drop event="Harvest" name="scrapIron" count="12"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="1" stick_chance="1"/>
+	<property name="DowngradeBlock" value="cntCar03SedanDamage3"/>	<!-- Tweak Car & Harvest Respawn -->
 	<property name="BigDecorationRadius" value="5"/>
 	<property name="CanDecorateOnSlopes" value="false"/>
 	<!--
@@ -13233,7 +13241,121 @@ kind of free
 	</property>
 	<property name="ActivationDistance" value="6"/>
 </block>
-	<!-- n Free -->
+
+<block id="1456" name="invisibleRespawnerMaster">	<!-- Tweak Car & Harvest Respawn Start -->
+	<property name="Class" value="PlantGrowing"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Material" value="treeWoodSmall"/>
+	<property name="StabilitySupport" value="false"/>	<!-- build restriction -->
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/Trees/Prefabs/Stump"/>
+	<property name="ModelOffset" value="0,-255,0"/>	<!-- Invisible prop. -->
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" count="1" prob="0.75" stick_chance="1"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property name="PlantGrowing.LightLevelGrow" value="0"/>
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+	<property name="PlantGrowing.GrowthRate" value="990"/>
+	<property name="PlantGrowing.IsRandom" value="true"/>
+</block>
+
+<block id="1457" name="cntCar03SedanDamage3">
+	<property name="Extends" value="invisibleRespawnerMaster"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="BigDecorationRadius" value="5"/>
+	<property name="PlantGrowing.Next" value="randomCarsHelper"/>
+	<property name="PlantGrowing.GrowthRate" value="990"/>	<!-- 66 x 15day = 990 -->
+	<property name="PlantGrowing.IsRandom" value="true"/>	<!-- 5~30days -->
+</block>
+
+<block id="1458" name="poleTop01Damage">
+	<property name="Extends" value="invisibleRespawnerMaster"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="PlantGrowing.Next" value="poleTop01"/>
+	<property name="PlantGrowing.GrowthRate" value="990"/>
+	<property name="PlantGrowing.IsRandom" value="true"/>
+</block>
+
+<block id="1459" name="cntBirdnestDamage">
+	<property name="Extends" value="invisibleRespawnerMaster"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="PlantGrowing.Next" value="cntBirdnest"/>
+	<property name="PlantGrowing.GrowthRate" value="990"/>
+	<property name="PlantGrowing.IsRandom" value="true"/>
+</block>
+
+<block id="1460" name="cntWashingMachineDamage">
+	<property name="Extends" value="invisibleRespawnerMaster"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="PlantGrowing.Next" value="cntWashingMachine"/>
+	<property name="PlantGrowing.GrowthRate" value="990"/>
+	<property name="PlantGrowing.IsRandom" value="true"/>
+</block>
+
+<block id="1461" name="cntTrashCompactorDamage">
+	<property name="Extends" value="invisibleRespawnerMaster"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="PlantGrowing.Next" value="cntTrashCompactor"/>
+	<property name="PlantGrowing.GrowthRate" value="990"/>
+	<property name="PlantGrowing.IsRandom" value="true"/>
+</block>
+
+<block id="1462" name="cntWallOvenDamage">
+	<property name="Extends" value="invisibleRespawnerMaster"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="PlantGrowing.Next" value="cntWallOven"/>
+	<property name="PlantGrowing.GrowthRate" value="990"/>
+	<property name="PlantGrowing.IsRandom" value="true"/>
+</block>
+
+<block id="123" name="cntShoppingCartDamage">
+	<property name="Extends" value="invisibleRespawnerMaster"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="PlantGrowing.Next" value="cntShoppingCart"/>
+	<property name="PlantGrowing.GrowthRate" value="990"/>
+	<property name="PlantGrowing.IsRandom" value="true"/>
+</block>
+
+<block id="127" name="cntShoppingBasketDamage">
+	<property name="Extends" value="invisibleRespawnerMaster"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="PlantGrowing.Next" value="cntShoppingBasket"/>
+	<property name="PlantGrowing.GrowthRate" value="990"/>
+	<property name="PlantGrowing.IsRandom" value="true"/>
+</block>
+<!--NOTE: Above grown blocks shouldn't be sold or added recipe.
+	These blocks below are sold on a trader, or craftable. Player placed block shouldn't respawn, after destroy. If you wanna enable the Opt, distinguish the POI one and player one. Or be tolerant.
+
+	mechanicalParts :
+		airConditioner cntFridge cntOven officeChair01 cntFileCabinet shoppingCartEmpty cntDeskSafeInsecure cntWallSafeInsecure cntGunSafeInsecure
+
+e.g.)
+
+<block id="365" name="airConditionerPOI">	<= original ID / POI only
+	== Snip ==
+	<property name="DowngradeBlock" value="airConditionerDamage"/>
+</block>
+
+<block id="139" name="airConditioner">	<= duplicate / player placed
+	<property name="Extends" value="airConditionerPOI" param1="DowngradeBlock"/>
+</block>
+-->
+	<!--property name="DowngradeBlock" value="airConditionerDamage"/-->	<!-- Tweak Car & Harvest Respawn Optional -->
+	<!--property name="DowngradeBlock" value="cntFridgeDamage"/-->	<!-- Tweak Car & Harvest Respawn Optional -->
+	<!--property name="DowngradeBlock" value="cntOvenDamage"/-->	<!-- Tweak Car & Harvest Respawn Optional -->
+	<!--property name="DowngradeBlock" value="officeChair01Damage"/-->	<!-- Tweak Car & Harvest Respawn Optional -->
+	<!--property name="DowngradeBlock" value="cntFileCabinetDamage"/-->	<!-- Tweak Car & Harvest Respawn Optional -->
+	<!--property name="DowngradeBlock" value="shoppingCartEmptyDamage"/-->	<!-- Tweak Car & Harvest Respawn Optional -->
+	<!--property name="DowngradeBlock" value="cntDeskSafeInsecureDamage"/-->	<!-- Tweak Car & Harvest Respawn Optional -->
+	<!--property name="DowngradeBlock" value="cntWallSafeInsecureDamage"/-->	<!-- Tweak Car & Harvest Respawn Optional -->
+	<!--property name="DowngradeBlock" value="cntGunSafeInsecureDamage"/-->	<!-- Tweak Car & Harvest Respawn Optional -->
+<!-- Tweak Car & Harvest Respawn End -->
+	<!-- 0 Free -->
 
 <block id="1463" name="scrapHatch_v1">
 	<property name="Class" value="DoorSecure"/>
